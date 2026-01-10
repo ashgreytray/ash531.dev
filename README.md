@@ -23,3 +23,5 @@ You're free to copy, modify, distribute, and use the source code, provided that 
 #### ASCII created with
 
 - [TAAG](https://patorjk.com/software/taag) by patorjk
+
+Quadeca. (2025, July 25). At A Time Like This [Music]. [Available as vinyl track](https://www.youtube.com/watch?v=y-lXSKRzvvU)

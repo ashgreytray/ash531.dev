@@ -446,22 +446,20 @@ nav ul li a {
 /* PICTURES TAB */
 .row,
 .img-container {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	width: 100%;
+	margin: 1.5em 0;
 	display: flex;
-	justify-content: space-between;
 	gap: 1.5em;
 }
 
-.row img,
 .img-container img {
-	flex: 0 0 auto;     
-	max-width: 100%;    
-	height: auto;       
+	flex: 1 1 0;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
 	user-select: none;
 	transition: filter 0.3s ease-in-out;
 }
+
 
 .img-desc {
 	position: absolute;

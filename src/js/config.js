@@ -1,5 +1,5 @@
 export const CONFIG = {
-	defaultTheme: 'ocean',
+	defaultTheme: 'winter',
 	seasonalTheme: false, // will change the default theme based on the date
 
 	// effects

@@ -6,31 +6,31 @@ import { initPictureColl } from './modules/navigation.js';
 import { initRouting } from './modules/routing.js';
 import { initTooltips } from './modules/utils.js';
 
-const musicBtn = document.getElementById('mute-toggle');
 const music = document.getElementById('bg-music');
-
-let started = false;
-
 music.volume = 0.5;
 
-musicBtn.addEventListener('click', async () => {
+let musicStarted = false;
+
+// target the tab explicitly
+const musicTab = document.getElementById('blog-tab');
+
+musicTab.addEventListener('click', async () => {
 	try {
-		if (!started) {
-			await music.play(); // user gesture → allowed
-			started = true;
-			musicBtn.textContent = '[PAUSE]';
+		// first interaction → start playback
+		if (!musicStarted) {
+			await music.play();
+			musicStarted = true;
 			return;
 		}
 
+		// afterwards, toggle play/pause
 		if (music.paused) {
 			await music.play();
-			musicBtn.textContent = '[PAUSE]';
 		} else {
 			music.pause();
-			musicBtn.textContent = '[PLAY]';
 		}
 	} catch (err) {
-		console.error('Audio playback blocked:', err);
+		console.error('Music playback failed:', err);
 	}
 });
 

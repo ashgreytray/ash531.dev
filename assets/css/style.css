@@ -455,12 +455,12 @@ nav ul li a {
 }
 
 .row img,
-.img-container {
-	flex: 1 1 auto;
-	-webkit-user-select: none; /* Safari */
+.img-container img {
+	flex: 0 0 auto;     
+	max-width: 100%;    
+	height: auto;       
 	user-select: none;
 	transition: filter 0.3s ease-in-out;
-	width: 0;
 }
 
 .img-desc {

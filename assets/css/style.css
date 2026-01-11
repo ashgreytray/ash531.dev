@@ -454,7 +454,7 @@ nav ul li a {
   user-select: none; /* -- Prevent image highlighting -- */
 }
 
-#image-track > .image {
+#image-track > .img-container {
   width: 40vmin;
   height: 56vmin;
   object-fit: cover;
@@ -621,9 +621,6 @@ nav ul li a {
 		display: flex;
 		gap: 0;
 	}
-	.img-container {
-		width: 50%;
-	}
 
 	/* about tab */
 	.contact-link {
@@ -675,6 +672,7 @@ nav ul li a {
 
 	text-decoration: none;
 }
+
 
 
 

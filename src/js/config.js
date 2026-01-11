@@ -3,7 +3,7 @@ export const CONFIG = {
 	seasonalTheme: false, // will change the default theme based on the date
 
 	// effects
-	effectsDisabledByDefault: true,
+	effectsDisabledByDefault: false,
 	effectsDisabledByDefaultMobile: true,
 	displayEffectsSwitch: true,
 
@@ -23,3 +23,4 @@ export const CONFIG = {
 	writeAnimationOnPostOpen: true,
 	showEstimatedReadTime: true,
 };
+

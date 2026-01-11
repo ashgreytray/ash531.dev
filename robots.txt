@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /src/example/
+This page is a personal website, stay away bots
 Disallow: /cdn-cgi/

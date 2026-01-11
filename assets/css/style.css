@@ -447,13 +447,17 @@ nav ul li a {
 .carousel {
     position: relative;
     width: 100%;
-    margin: 1.5em 0;
+}
+
+.carousel-viewport {
+    overflow: hidden;   /* forces carousel behaviour */
+    width: 100%;
 }
 
 .carousel-track {
     display: flex;
     gap: 1.5em;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -468,8 +472,8 @@ nav ul li a {
 
 .img-container img {
     display: block;
-    width: auto;
     height: auto;
+    width: auto;
 }
 
 /* Buttons */
@@ -477,12 +481,12 @@ nav ul li a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    z-index: 5;
+    background: rgba(0,0,0,.6);
+    color: #fff;
     border: none;
     font-size: 2rem;
-    padding: 0.25em 0.6em;
+    padding: .2em .6em;
     cursor: pointer;
 }
 
@@ -703,4 +707,5 @@ nav ul li a {
 
 	text-decoration: none;
 }
+
 

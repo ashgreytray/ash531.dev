@@ -723,3 +723,7 @@ body {
 	-ms-overflow-style: none;
 }
 
+.overflow-fix {
+	display: flex;
+	flex-wrap: wrap;
+}

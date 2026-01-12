@@ -6,10 +6,20 @@ import { initPictureColl } from './modules/navigation.js';
 import { initRouting } from './modules/routing.js';
 import { initTooltips } from './modules/utils.js';
 
-const music = document.getElementById('bg-music');
-music.volume = 0.5;
+function playMusic(e) {
+	e.preventDefault();
 
-let musicStarted = false;
+	const audio = document.getElementById("bg-music");
+
+	if (audio.paused) {
+		audio.play().catch(err => {
+			console.error("Autoplay blocked:", err);
+		});
+	} else {
+		audio.pause();
+		audio.currentTime = 0;
+	}
+}
 
 // target the tab explicitly
 const musicTab = document.getElementById('blog-tab');
@@ -108,4 +118,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById('grunge-overlay').style.display = 'none';
 	}
 });
+
 
